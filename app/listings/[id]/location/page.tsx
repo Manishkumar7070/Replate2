@@ -25,7 +25,7 @@ const mockListing = {
   },
 }
 
-export default function LocationPage({ params }: { params: { id: string } }) {
+export default function LocationPage({ params }: { params: Promise<{ id: string }> | { id: string } }) {
   const [selectedTransport, setSelectedTransport] = useState<"driving" | "walking" | "cycling">("driving")
 
   const handleGetDirections = () => {

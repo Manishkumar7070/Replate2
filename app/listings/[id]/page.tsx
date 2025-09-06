@@ -44,7 +44,7 @@ const mockListing = {
   createdAt: "2024-01-15T10:30:00Z",
 }
 
-export default function ListingDetailPage({ params }: { params: { id: string } }) {
+export default function ListingDetailPage({ params }: { params: Promise<{ id: string }> | { id: string } }) {
   const [isRequestDialogOpen, setIsRequestDialogOpen] = useState(false)
 
   const handleSubmitRequest = (requestData: any) => {

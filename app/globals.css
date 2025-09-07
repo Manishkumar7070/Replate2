@@ -3,74 +3,74 @@
 @tailwind utilities;
 
 :root {
-  --background: oklch(1 0 0); /* White background */
-  --foreground: oklch(0.35 0.02 240); /* Dark cyan text #475569 */
-  --card: oklch(0.98 0.02 200); /* Light cyan card background #ecfeff */
-  --card-foreground: oklch(0.25 0.05 200); /* Cyan-800 card text #164e63 */
-  --popover: oklch(1 0 0); /* White popover */
-  --popover-foreground: oklch(0.35 0.02 240); /* Dark cyan popover text */
-  --primary: oklch(0.25 0.05 200); /* Cyan-800 primary #164e63 */
-  --primary-foreground: oklch(1 0 0); /* White text on primary */
-  --secondary: oklch(0.55 0.15 60); /* Amber-600 secondary #d97706 */
-  --secondary-foreground: oklch(1 0 0); /* White text on secondary */
-  --muted: oklch(0.99 0.01 240); /* Very light gray #f8fafc */
-  --muted-foreground: oklch(0.35 0.02 240); /* Dark cyan muted text */
-  --accent: oklch(0.55 0.15 60); /* Amber-600 accent #d97706 */
-  --accent-foreground: oklch(1 0 0); /* White text on accent */
-  --destructive: oklch(0.577 0.245 27.325); /* Red for errors */
-  --destructive-foreground: oklch(1 0 0); /* White text on destructive */
-  --border: oklch(0.92 0.01 240); /* Light gray border #e0e0e0 */
-  --input: oklch(0.99 0.01 240); /* Light input background #f8fafc */
-  --ring: oklch(0.55 0.15 60); /* Amber focus ring */
-  --chart-1: oklch(0.25 0.05 200); /* Cyan-800 for charts */
-  --chart-2: oklch(0.55 0.15 60); /* Amber-600 for charts */
-  --chart-3: oklch(0.98 0.02 200); /* Light cyan for charts */
-  --chart-4: oklch(0.35 0.02 240); /* Dark cyan for charts */
-  --chart-5: oklch(0.99 0.01 240); /* Very light gray for charts */
+  --background: 0 0% 100%; /* White background */
+  --foreground: 215 25% 27%; /* Dark cyan text #475569 */
+  --card: 186 100% 94%; /* Light cyan card background #ecfeff */
+  --card-foreground: 195 100% 20%; /* Cyan-800 card text #164e63 */
+  --popover: 0 0% 100%; /* White popover */
+  --popover-foreground: 215 25% 27%; /* Dark cyan popover text */
+  --primary: 195 100% 20%; /* Cyan-800 primary #164e63 */
+  --primary-foreground: 0 0% 100%; /* White text on primary */
+  --secondary: 32 95% 44%; /* Amber-600 secondary #d97706 */
+  --secondary-foreground: 0 0% 100%; /* White text on secondary */
+  --muted: 210 40% 98%; /* Very light gray #f8fafc */
+  --muted-foreground: 215 25% 27%; /* Dark cyan muted text */
+  --accent: 32 95% 44%; /* Amber-600 accent #d97706 */
+  --accent-foreground: 0 0% 100%; /* White text on accent */
+  --destructive: 0 84% 60%; /* Red for errors */
+  --destructive-foreground: 0 0% 100%; /* White text on destructive */
+  --border: 214 32% 91%; /* Light gray border #e0e0e0 */
+  --input: 210 40% 98%; /* Light input background #f8fafc */
+  --ring: 32 95% 44%; /* Amber focus ring */
+  --chart-1: 195 100% 20%; /* Cyan-800 for charts */
+  --chart-2: 32 95% 44%; /* Amber-600 for charts */
+  --chart-3: 186 100% 94%; /* Light cyan for charts */
+  --chart-4: 215 25% 27%; /* Dark cyan for charts */
+  --chart-5: 210 40% 98%; /* Very light gray for charts */
   --radius: 0.5rem;
-  --sidebar: oklch(1 0 0); /* White sidebar */
-  --sidebar-foreground: oklch(0.35 0.02 240); /* Dark cyan sidebar text */
-  --sidebar-primary: oklch(0.25 0.05 200); /* Cyan-800 sidebar primary */
-  --sidebar-primary-foreground: oklch(1 0 0); /* White sidebar primary text */
-  --sidebar-accent: oklch(0.55 0.15 60); /* Amber sidebar accent */
-  --sidebar-accent-foreground: oklch(1 0 0); /* White sidebar accent text */
-  --sidebar-border: oklch(0.92 0.01 240); /* Light gray sidebar border */
-  --sidebar-ring: oklch(0.55 0.15 60); /* Amber sidebar focus ring */
+  --sidebar: 0 0% 100%; /* White sidebar */
+  --sidebar-foreground: 215 25% 27%; /* Dark cyan sidebar text */
+  --sidebar-primary: 195 100% 20%; /* Cyan-800 sidebar primary */
+  --sidebar-primary-foreground: 0 0% 100%; /* White sidebar primary text */
+  --sidebar-accent: 32 95% 44%; /* Amber sidebar accent */
+  --sidebar-accent-foreground: 0 0% 100%; /* White sidebar accent text */
+  --sidebar-border: 214 32% 91%; /* Light gray sidebar border */
+  --sidebar-ring: 32 95% 44%; /* Amber sidebar focus ring */
 }
 
 .dark {
-  --background: oklch(0.15 0.02 240); /* Dark background */
-  --foreground: oklch(0.98 0.02 200); /* Light cyan text */
-  --card: oklch(0.18 0.02 240); /* Dark card background */
-  --card-foreground: oklch(0.98 0.02 200); /* Light cyan card text */
-  --popover: oklch(0.15 0.02 240); /* Dark popover */
-  --popover-foreground: oklch(0.98 0.02 200); /* Light cyan popover text */
-  --primary: oklch(0.98 0.02 200); /* Light cyan primary in dark mode */
-  --primary-foreground: oklch(0.15 0.02 240); /* Dark text on primary */
-  --secondary: oklch(0.35 0.02 240); /* Dark secondary */
-  --secondary-foreground: oklch(0.98 0.02 200); /* Light text on secondary */
-  --muted: oklch(0.25 0.02 240); /* Dark muted */
-  --muted-foreground: oklch(0.7 0.02 200); /* Medium cyan muted text */
-  --accent: oklch(0.55 0.15 60); /* Keep amber accent in dark mode */
-  --accent-foreground: oklch(1 0 0); /* White text on accent */
-  --destructive: oklch(0.396 0.141 25.723); /* Dark mode red */
-  --destructive-foreground: oklch(0.637 0.237 25.331); /* Dark mode red text */
-  --border: oklch(0.25 0.02 240); /* Dark border */
-  --input: oklch(0.25 0.02 240); /* Dark input */
-  --ring: oklch(0.55 0.15 60); /* Keep amber focus ring */
-  --chart-1: oklch(0.55 0.15 60); /* Amber for dark charts */
-  --chart-2: oklch(0.98 0.02 200); /* Light cyan for dark charts */
-  --chart-3: oklch(0.7 0.02 200); /* Medium cyan for dark charts */
-  --chart-4: oklch(0.35 0.02 240); /* Dark cyan for dark charts */
-  --chart-5: oklch(0.25 0.02 240); /* Very dark for dark charts */
-  --sidebar: oklch(0.12 0.02 240); /* Very dark sidebar */
-  --sidebar-foreground: oklch(0.98 0.02 200); /* Light sidebar text */
-  --sidebar-primary: oklch(0.55 0.15 60); /* Amber sidebar primary */
-  --sidebar-primary-foreground: oklch(1 0 0); /* White sidebar primary text */
-  --sidebar-accent: oklch(0.25 0.02 240); /* Dark sidebar accent */
-  --sidebar-accent-foreground: oklch(0.98 0.02 200); /* Light sidebar accent text */
-  --sidebar-border: oklch(0.25 0.02 240); /* Dark sidebar border */
-  --sidebar-ring: oklch(0.55 0.15 60); /* Amber sidebar focus ring */
+  --background: 215 25% 15%; /* Dark background */
+  --foreground: 186 100% 98%; /* Light cyan text */
+  --card: 215 25% 18%; /* Dark card background */
+  --card-foreground: 186 100% 98%; /* Light cyan card text */
+  --popover: 215 25% 15%; /* Dark popover */
+  --popover-foreground: 186 100% 98%; /* Light cyan popover text */
+  --primary: 186 100% 98%; /* Light cyan primary in dark mode */
+  --primary-foreground: 215 25% 15%; /* Dark text on primary */
+  --secondary: 215 25% 35%; /* Dark secondary */
+  --secondary-foreground: 186 100% 98%; /* Light text on secondary */
+  --muted: 215 25% 25%; /* Dark muted */
+  --muted-foreground: 186 100% 70%; /* Medium cyan muted text */
+  --accent: 32 95% 44%; /* Keep amber accent in dark mode */
+  --accent-foreground: 0 0% 100%; /* White text on accent */
+  --destructive: 0 84% 60%; /* Dark mode red */
+  --destructive-foreground: 0 0% 100%; /* Dark mode red text */
+  --border: 215 25% 25%; /* Dark border */
+  --input: 215 25% 25%; /* Dark input */
+  --ring: 32 95% 44%; /* Keep amber focus ring */
+  --chart-1: 32 95% 44%; /* Amber for dark charts */
+  --chart-2: 186 100% 98%; /* Light cyan for dark charts */
+  --chart-3: 186 100% 70%; /* Medium cyan for dark charts */
+  --chart-4: 215 25% 35%; /* Dark cyan for dark charts */
+  --chart-5: 215 25% 25%; /* Very dark for dark charts */
+  --sidebar: 215 25% 12%; /* Very dark sidebar */
+  --sidebar-foreground: 186 100% 98%; /* Light sidebar text */
+  --sidebar-primary: 32 95% 44%; /* Amber sidebar primary */
+  --sidebar-primary-foreground: 0 0% 100%; /* White sidebar primary text */
+  --sidebar-accent: 215 25% 25%; /* Dark sidebar accent */
+  --sidebar-accent-foreground: 186 100% 98%; /* Light sidebar accent text */
+  --sidebar-border: 215 25% 25%; /* Dark sidebar border */
+  --sidebar-ring: 32 95% 44%; /* Amber sidebar focus ring */
 }
 
 
